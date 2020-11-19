@@ -1,7 +1,7 @@
 package des
 
 import (
-	"CryptCode/utils"
+	"DesCode/utils"
 	"crypto/cipher"
 	"crypto/des"
 )

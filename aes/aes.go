@@ -1,7 +1,7 @@
 package aes
 
 import (
-	"CryptCode/utils"
+	"DesCode/utils"
 	"crypto/aes"
 	"crypto/cipher"
 )
@@ -24,3 +24,12 @@ func AESEnCrypt(origin []byte, key []byte) ([]byte, error) {
 	blockMode.CryptBlocks(cipherData, cryptData)
 	return cipherData, nil
 }
+
+func AESDECrypt(origin []byte, key []byte) ([]byte,error){
+	block, err := aes.NewCipher(key)
+	if err != nil {
+		return nil, err
+	}
+
+}
+

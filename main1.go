@@ -15,9 +15,9 @@ func main() {
 	 * Decrypt
 	 */
 
-	/**
-	 * 对称加密：des,3des,aes ==> 共性：块加密
-	 */
+	 /**
+	  * 对称加密：des,3des,aes ==> 共性：块加密
+	  */
 
 	person1 := NewChinese()
 	age := person1.Age()
@@ -32,7 +32,6 @@ func main() {
 	person2.Age()
 	//person2.Php
 
-
 }
 
 /**
@@ -45,7 +44,7 @@ func main() {
 		月薪
 
 	*接口：有统一的共性进行判断时，往往使用的是接口
-*/
+ */
 type Person interface {
 	Shanliang() bool
 	WeiRenChuShi()

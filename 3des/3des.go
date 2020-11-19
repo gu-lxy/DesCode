@@ -1,7 +1,7 @@
 package _des
 
 import (
-	"CryptCode/utils"
+	"DesCode/utils"
 	"crypto/cipher"
 	"crypto/des"
 )
@@ -9,7 +9,8 @@ import (
 /**
  * 该函数用于实现3des算法的加密
  */
-func Triple3DESEncrypt(origintext []byte, key []byte) ([]byte, error) {
+func TripleDESEncrypt(origintext []byte, key []byte) ([]byte, error) {
+
 	//三要素：key、data、mode
 	//1、实例化一个cipher
 	block, err := des.NewTripleDESCipher(key)
@@ -29,7 +30,7 @@ func Triple3DESEncrypt(origintext []byte, key []byte) ([]byte, error) {
 }
 
 /**
- * 该函数用于对3des密文进行解密，并返回明文
+ * 该函数用于对密文进行解密，并返回明文
  */
 func TripleDESDecrypt(ciphertext []byte, key []byte) ([]byte, error) {
 	//三元素：key、data、mode

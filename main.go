@@ -203,6 +203,7 @@ func main() {
 		fmt.Println("生成ECDSA秘钥对失败:", err.Error())
 		return
 	}
+
 	//② 准备数据
 	data6 := "张华考上了北京大学,李萍进了软件职业技术学校,我在百货公司当售货员,我们都有光明的前途和未来"
 
@@ -222,7 +223,7 @@ func main() {
 		fmt.Println("ECDSA数字签名验证成功")
 	} else {
 		fmt.Println("ECDSA数字签名验证失败")
-		return
+
 	}
 
 }
